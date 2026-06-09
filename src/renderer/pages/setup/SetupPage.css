@@ -1,0 +1,171 @@
+/**
+ * 安装页面样式
+ */
+
+.setup-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.setup-page h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.setup-page .subtitle {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.agents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.agent-card {
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.agent-card.selected {
+  border-color: #3370ff;
+  background-color: #f0f5ff;
+}
+
+.agent-card.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.agent-card:not(.disabled):hover {
+  border-color: #3370ff;
+  box-shadow: 0 2px 8px rgba(51, 112, 255, 0.15);
+}
+
+.agent-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.agent-info {
+  flex: 1;
+}
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.agent-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status-badge {
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.status-badge.idle {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.status-badge.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.recommended-badge {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.agent-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.agent-size {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.progress-section {
+  margin-top: 12px;
+}
+
+.progress-message {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 8px;
+  display: block;
+}
+
+.selection-summary {
+  text-align: center;
+  font-size: 16px;
+  color: #374151;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.success-section,
+.failed-section,
+.skipped-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.success-section {
+  background-color: #d1fae5;
+  border: 1px solid #6ee7b7;
+}
+
+.failed-section {
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+}
+
+.skipped-section {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+}
+
+.agent-summary {
+  padding: 8px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agent-summary.error {
+  color: #dc2626;
+}

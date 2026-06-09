@@ -1,0 +1,25 @@
+{
+  "appId": "com.yourcompany.ai-agent-app",
+  "productName": "AI Agent助手",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "package.json"
+  ],
+  "mac": {
+    "target": ["dmg", "zip"],
+    "icon": "resources/icon.icns",
+    "category": "public.app-category.productivity"
+  },
+  "win": {
+    "target": ["nsis", "zip"],
+    "icon": "resources/icon.ico"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "icon": "resources/icon.png",
+    "category": "Utility"
+  }
+}

@@ -1,0 +1,209 @@
+/**
+ * 设置页面样式
+ */
+
+.settings-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.settings-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.settings-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.settings-section {
+  margin-bottom: 32px;
+}
+
+.settings-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.agents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agent-item {
+  padding: 20px;
+}
+
+.agent-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.agent-item-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.agent-item-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.agent-item-status {
+  flex-shrink: 0;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status-badge.installed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.not-installed {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.agent-item-path {
+  font-size: 12px;
+  color: #9ca3af;
+  font-family: monospace;
+  margin-bottom: 12px;
+}
+
+.gateway-config {
+  padding: 24px;
+}
+
+.config-item {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.config-item:last-of-type {
+  border-bottom: none;
+}
+
+.config-item label {
+  font-weight: 600;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.config-item span {
+  flex: 1;
+  color: #6b7280;
+}
+
+.config-item .locked {
+  color: #dc2626;
+}
+
+.config-item .unlocked {
+  color: #059669;
+}
+
+.unlock-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #f3f4f6;
+}
+
+.unlock-hint {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.unlock-hint.success {
+  color: #059669;
+  font-weight: 500;
+}
+
+.unlock-form {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.about-card {
+  padding: 32px;
+}
+
+.about-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.version {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 32px;
+}
+
+.features, .tech-stack {
+  margin-bottom: 24px;
+}
+
+.features h4, .tech-stack h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  padding: 8px 0;
+  color: #6b7280;
+}
+
+.tech-stack p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.debug-hint {
+  margin-top: 24px;
+  padding: 12px;
+  background-color: #fef3c7;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #92400e;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "ai-agent-app",
+  "version": "0.1.0",
+  "description": "AI Agent 多对话平台 - 支持 Claude Code、Codex、OpenClaw、Hermes",
+  "main": "./dist/main/index.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "start": "electron-vite preview",
+    "package": "electron-builder --config electron-builder.json",
+    "package:mac": "electron-builder --mac --config electron-builder.json",
+    "package:win": "electron-builder --win --config electron-builder.json",
+    "package:linux": "electron-builder --linux --config electron-builder.json",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.66.0",
+    "@icon-park/react": "^1.4.2",
+    "classnames": "^2.5.1",
+    "crypto-js": "^4.2.0",
+    "electron-updater": "^6.3.0",
+    "execa": "^9.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}
